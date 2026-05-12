@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useMemo } from "react";
-import { ShieldCheck, BadgeCheck, Phone, MessageCircle } from "lucide-react";
+import { ShieldCheck, BadgeCheck, Phone, MessageCircle, Briefcase } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 
 export default function Hero() {
@@ -96,18 +96,18 @@ export default function Hero() {
               {/* Action Buttons */}
               <div className="flex flex-row gap-1.5 w-full mb-3">
                 <a
-                  href="tel:+919450888648"
-                  className="flex-1 flex items-center justify-center gap-1 rounded-[10px] bg-[#1e3a8a] py-2.5 text-[9px] font-bold text-white shadow-md active:scale-95 md:px-6 md:py-4 md:text-base md:gap-2 md:rounded-xl"
+                  href="#policies"
+                  className="flex-1 flex items-center justify-center gap-1 rounded-[10px] bg-[#1e3a8a] py-2.5 text-[9px] font-bold text-white shadow-md active:scale-95 md:px-6 md:py-4 md:text-base md:gap-2 md:rounded-xl hover:bg-blue-900 transition-colors"
                 >
-                  <Phone className="h-3 w-3 fill-current md:h-5 md:w-5" />
-                  Call Now
+                  <ShieldCheck className="h-3 w-3 md:h-5 md:w-5" />
+                  {t.hero.getPolicy}
                 </a>
                 <a
-                  href="https://wa.me/919450888648"
-                  className="flex-1 flex items-center justify-center gap-1 rounded-[10px] bg-[#10b981] py-2.5 text-[9px] font-bold text-white shadow-md active:scale-95 md:px-6 md:py-4 md:text-base md:gap-2 md:rounded-xl"
+                  href="#recruitment"
+                  className="flex-1 flex items-center justify-center gap-1 rounded-[10px] border border-[#1e3a8a] bg-white text-[#1e3a8a] py-2.5 text-[9px] font-bold shadow-sm active:scale-95 md:px-6 md:py-4 md:text-base md:gap-2 md:rounded-xl hover:bg-blue-50 transition-colors"
                 >
-                  <MessageCircle className="h-3 w-3 md:h-5 md:w-5" />
-                  WhatsApp
+                  <Briefcase className="h-3 w-3 md:h-5 md:w-5" />
+                  {t.hero.joinAgent}
                 </a>
               </div>
 

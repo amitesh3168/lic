@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Send, CheckCircle2, HeadphonesIcon } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
+import ScrollReveal from "./ScrollReveal";
 
 export default function LeadForm() {
   const [name, setName] = useState("");
@@ -27,7 +28,7 @@ export default function LeadForm() {
       <div className="mx-auto max-w-6xl flex flex-col lg:flex-row gap-12 lg:gap-20 items-center">
         
         {/* Left Side: Value Proposition */}
-        <div className="w-full lg:w-1/2">
+        <ScrollReveal animation="fade-right" className="w-full lg:w-1/2">
           <span className="mb-4 inline-block rounded-full bg-lic-yellow/20 px-3 py-1.5 text-xs font-semibold text-lic-blue">
             {t.lead.badge}
           </span>
@@ -53,10 +54,10 @@ export default function LeadForm() {
               <span className="text-sm font-medium text-gray-700 md:text-base">{t.lead.f3}</span>
             </div>
           </div>
-        </div>
+        </ScrollReveal>
 
         {/* Right Side: Form */}
-        <div className="w-full lg:w-1/2">
+        <ScrollReveal animation="fade-left" delay={200} className="w-full lg:w-1/2">
           <div className="rounded-2xl border border-gray-100 bg-white p-6 shadow-[0_8px_30px_rgb(0,0,0,0.08)] md:p-10 relative">
             <div className="absolute -top-6 -right-6 h-16 w-16 bg-lic-yellow rounded-full flex items-center justify-center shadow-lg transform rotate-12">
               <HeadphonesIcon className="h-8 w-8 text-[#0a192f]" />
@@ -136,7 +137,7 @@ export default function LeadForm() {
               </p>
             </form>
           </div>
-        </div>
+        </ScrollReveal>
       </div>
     </section>
   );

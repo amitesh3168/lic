@@ -2,6 +2,7 @@
 
 import { Shield, Award, Users, HandCoins } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
+import ScrollReveal from "./ScrollReveal";
 
 export default function Achievements() {
   const { t } = useLanguage();
@@ -40,27 +41,30 @@ export default function Achievements() {
       <div className="absolute bottom-0 right-0 w-64 h-64 bg-white/5 rounded-full blur-[80px] pointer-events-none"></div>
 
       <div className="relative z-10 mx-auto max-w-7xl">
-        <div className="mb-8 text-center md:mb-12">
-          <h2 className="text-2xl font-bold md:text-4xl">
-            {t.achievements.title} <span className="text-lic-yellow">{t.achievements.highlight}</span>
-          </h2>
-          <p className="mt-3 text-sm text-blue-100 md:text-base">
-            {t.achievements.subtitle}
-          </p>
-        </div>
+        <ScrollReveal animation="fade-up">
+          <div className="mb-8 text-center md:mb-12">
+            <h2 className="text-2xl font-bold md:text-4xl">
+              {t.achievements.title} <span className="text-lic-yellow">{t.achievements.highlight}</span>
+            </h2>
+            <p className="mt-3 text-sm text-blue-100 md:text-base">
+              {t.achievements.subtitle}
+            </p>
+          </div>
+        </ScrollReveal>
 
         <div className="grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-8">
-          {metrics.map((metric) => {
+          {metrics.map((metric, index) => {
             const Icon = metric.icon;
             return (
-              <div
-                key={metric.id}
-                className="flex flex-col items-center justify-center rounded-2xl border border-white/10 bg-white/5 p-6 text-center backdrop-blur-sm transition-all hover:-translate-y-1 hover:bg-white/10"
-              >
-                <Icon className="mb-3 h-8 w-8 text-lic-yellow md:mb-4 md:h-10 md:w-10" />
-                <h3 className="mb-1 text-2xl font-bold md:text-4xl">{metric.value}</h3>
-                <p className="text-xs text-blue-100 md:text-sm">{metric.label}</p>
-              </div>
+              <ScrollReveal key={metric.id} animation="zoom-in" delay={index * 120}>
+                <div
+                  className="flex flex-col items-center justify-center rounded-2xl border border-white/10 bg-white/5 p-6 text-center backdrop-blur-sm transition-all hover:-translate-y-1 hover:bg-white/10"
+                >
+                  <Icon className="mb-3 h-8 w-8 text-lic-yellow md:mb-4 md:h-10 md:w-10" />
+                  <h3 className="mb-1 text-2xl font-bold md:text-4xl">{metric.value}</h3>
+                  <p className="text-xs text-blue-100 md:text-sm">{metric.label}</p>
+                </div>
+              </ScrollReveal>
             );
           })}
         </div>

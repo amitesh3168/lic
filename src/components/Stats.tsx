@@ -10,7 +10,7 @@ const stats = [
   {
     id: 2,
     icon: UsersRound,
-    value: "1000+",
+    value: "4000+",
     label: "Happy\nFamilies",
   },
   {

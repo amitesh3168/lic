@@ -61,7 +61,7 @@ export const en = {
     w2d: "Dedicated support team to ensure hassle-free claims.",
     w3: "Lifetime Support",
     w3d: "We stand by you and your family forever.",
-    w4: "Trusted by 1000+",
+    w4: "Trusted by 4000+",
     w4d: "Join our family of happy and secure clients."
   },
   recruitment: {
@@ -128,7 +128,7 @@ export const en = {
     quickLinks: "Quick Links",
     contact: "Contact Us",
     rights: "All rights reserved.",
-    disclaimer: "This is the personal website of an authorized LIC Agent & CLIA. This is not the official website of Life Insurance Corporation of India."
+    disclaimer: "This is the personal website of an authorized Chief Life Insurance Advisor. This is not the official website of Life Insurance Corporation of India."
   },
   testimonials: {
     title: "What Our Clients Say",

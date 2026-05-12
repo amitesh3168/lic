@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 import { LanguageProvider } from "@/context/LanguageContext";
 
 export const metadata: Metadata = {
-  title: "Rajesh Kumar | LIC Agent & CLIA",
+  title: "Krishna Shukla | Chief Life Insurance Advisor",
   description: "Secure your family's future and build a powerful career in insurance.",
 };
 

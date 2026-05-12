@@ -16,7 +16,7 @@ export default function Achievements() {
     {
       id: 2,
       icon: Award,
-      value: "1000+",
+      value: "4000+",
       label: t.achievements.families,
     },
     {
@@ -38,7 +38,7 @@ export default function Achievements() {
       {/* Decorative Orbs */}
       <div className="absolute top-0 left-0 w-64 h-64 bg-lic-yellow/10 rounded-full blur-[80px] pointer-events-none"></div>
       <div className="absolute bottom-0 right-0 w-64 h-64 bg-white/5 rounded-full blur-[80px] pointer-events-none"></div>
-      
+
       <div className="relative z-10 mx-auto max-w-7xl">
         <div className="mb-8 text-center md:mb-12">
           <h2 className="text-2xl font-bold md:text-4xl">

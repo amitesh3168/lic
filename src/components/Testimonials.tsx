@@ -34,7 +34,7 @@ const reviews = [
   },
   {
     id: 5,
-    name: "Sunil Kumar",
+    name: "Sunil Shukla",
     location: "Mumbai",
     text: "Always available to answer queries. The long term support is truly commendable.",
     rating: 5,

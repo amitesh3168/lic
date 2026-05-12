@@ -73,11 +73,11 @@ export default function Header() {
                 href="https://wa.me/919450888648"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex h-8 w-8 sm:h-10 sm:w-10 items-center justify-center rounded-full border border-gray-200 text-[#25D366] transition-all hover:bg-green-50 hover:shadow-sm active:scale-90 md:h-auto md:w-auto md:px-4 md:py-2 md:rounded-lg md:border-[#25D366] md:bg-white md:hover:bg-[#25D366] md:hover:text-white group"
+                className="flex h-8 w-8 sm:h-10 sm:w-10 items-center justify-center rounded-full border border-gray-200 transition-all hover:bg-green-50 hover:shadow-sm active:scale-90 md:h-auto md:w-auto md:px-4 md:py-2 md:rounded-lg md:border-[#25D366] md:bg-[#25D366]/5 md:hover:bg-[#25D366]/10 group"
                 aria-label="WhatsApp"
               >
-                <MessageCircle className="h-4 w-4 sm:h-5 sm:w-5 md:mr-2 md:h-4 md:w-4 transition-colors md:group-hover:text-white" />
-                <span className="hidden md:inline text-sm font-bold">WhatsApp</span>
+                <img src="/WhatsApp_Logo.webp" alt="WhatsApp" className="h-5 w-5 sm:h-6 sm:w-6 md:mr-2 md:h-5 md:w-5 object-contain drop-shadow-sm transition-transform group-hover:scale-110" />
+                <span className="hidden md:inline text-sm font-bold text-[#25D366]">WhatsApp</span>
               </a>
               <a
                 href="tel:+919450888648"

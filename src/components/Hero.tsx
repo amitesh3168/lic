@@ -55,9 +55,9 @@ export default function Hero() {
   const slide = slides[currentSlide];
 
   return (
-    <section id="home" className="bg-[#f8fafc] px-3 pt-4 pb-6 md:px-8 md:pt-10">
-      <div className="mx-auto max-w-7xl">
-        <div className="relative w-full overflow-hidden rounded-[32px] border border-gray-100 bg-gradient-to-br from-[#eef5ff] via-white to-[#fff9e8] shadow-[0_8px_30px_rgba(0,0,0,0.08)]">
+    <section id="home" className="bg-[#f8fafc]">
+      <div className="w-full">
+        <div className="relative w-full overflow-hidden bg-gradient-to-br from-[#eef5ff] via-white to-[#fff9e8] shadow-[0_4px_20px_rgba(0,0,0,0.06)]">
           
           {/* Background Decor */}
           <div className="absolute top-0 right-0 h-48 w-48 rounded-full bg-lic-blue/10 blur-3xl"></div>
